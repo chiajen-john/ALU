@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:16:02 09/28/2013 
+// Create Date:
 // Design Name: 
 // Module Name:    dff 
 // Project Name: 
@@ -20,13 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module dff(q, d, clk);
+  input		d, clk; 
+  output reg	q; 
 
-//parameter D = 0;		
-
-input		d, clk; //declare inputs d and clk, 1 bit each
-output reg	q;          //declare output q, 1 bit
-
-always @(posedge clk)
-q=d;
-
+  always @(posedge clk)
+    q=d;
+  
 endmodule
