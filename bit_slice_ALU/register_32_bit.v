@@ -5,7 +5,7 @@
 // 
 // Create Date: 03/14/2022 02:03:45 PM
 // Design Name: 
-// Module Name: my_reg
+// Module Name: 
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
