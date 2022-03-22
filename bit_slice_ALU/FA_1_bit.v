@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:16:02 09/28/2013 
+// Create Date: 
 // Design Name: 
 // Module Name:    FA_str 
 // Project Name: 
