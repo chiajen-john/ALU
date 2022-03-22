@@ -38,7 +38,7 @@ module Top_Module(R0, overflow, zero, carry, R2, R3, ALUop,clk);
         .R3(R3), 
         .ALUop(ALUop), 
         .clk(clk));
-    my_reg g1(.q(i_q), .overflow(i_overflow), .zero(i_zero), .carry(i_carry), .d(i_R1), .clk(clk));
+    register_32_bit g1(.q(i_q), .overflow(i_overflow), .zero(i_zero), .carry(i_carry), .d(i_R1), .clk(clk));
     assign overflow = i_q[width+2];
     assign zero = i_q[width+1];
     assign carry = i_q[width];
