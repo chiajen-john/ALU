@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module my_reg (q, overflow, zero, carry, d, clk);
+module register_32_bit (q, overflow, zero, carry, d, clk);
 parameter width=32;
 output [width+2:0]q;
 input overflow, zero, carry;
