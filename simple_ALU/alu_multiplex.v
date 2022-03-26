@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:
-// Design Name: 
-// Module Name: alu_multiplex
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module alu_multiplex(A, B, C, D, S, Y);
     input [7:0]A,B,C,D;
@@ -33,7 +13,7 @@ module alu_multiplex(A, B, C, D, S, Y);
             2'b10 : y = C;
             2'b11 : y = D;
         endcase
-    end // always
+    end 
     
     assign Y = y;    
 endmodule
