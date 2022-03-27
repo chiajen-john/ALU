@@ -6,13 +6,19 @@ module ALU_1_bit(out, c_out, a, b, select, c_in);
     output reg out;
     output c_out;
     wire new_b, NOT_b, out_1, out_2, out_3, out_4, out_5;
-    not g0 (NOT_b, b);
+    
     assign new_b = (select==3'b101)?NOT_b:b; // mux
-    FA_1_bit g1 (.c_out(c_out), .sum(out_1), .a(a), .b(new_b), .c_in(c_in)); // add or subtract 
+    
+    not g0 (NOT_b, b);
+    FA_1_bit g1 (.c_out(c_out), 
+                 .sum(out_1), 
+                 .a(a), .b(new_b), 
+                 .c_in(c_in)); // add or subtract 
     MOV_1_bit g2 (out_2, a, b); // move a to out
     NOT_1_bit g3 (out_3, a, b); // not a
     NAND_1_bit g4 (out_4, a, b);
     NOR_1_bit g5 (out_5, a, b);
+    
     always @(*) begin
         case (select)
             3'b000: out <= out_2;
