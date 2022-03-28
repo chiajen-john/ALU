@@ -1,4 +1,4 @@
-# ALU
+# Arithmetic Logic Unit
 
 `simple_ALU`: An ALU written with mostly behavior verilog.
 
