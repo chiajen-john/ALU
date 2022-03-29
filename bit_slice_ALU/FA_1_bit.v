@@ -3,7 +3,7 @@
 module FA_1_bit(c_out, sum, a, b, c_in);
   input	a, b, c_in; 
   output c_out, sum; 
-	wire xor_1, and_1, and_2;
+  wire xor_1, and_1, and_2;
 	
 	xor G1(xor_1, a, b);
 	xor G2(sum, xor_1, c_in);
